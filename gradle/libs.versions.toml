@@ -13,16 +13,16 @@
 # limitations under the License.
 
 [versions]
-kotlin = "1.9.10"
+kotlin = "1.9.20"
 okhttp = "3.14.9"
-protobuf = "3.24.4"
+protobuf = "3.25.0"
 robovm = "2.3.14"
 kotlinx-serialization = "1.6.0"
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-dokka = { id = "org.jetbrains.dokka", version = "1.9.0" }
+dokka = { id = "org.jetbrains.dokka", version = "1.9.10" }
 errorprone = { id = "net.ltgt.errorprone", version = "3.1.0" }
 mavenPublish = { id = "com.vanniktech.maven.publish", version = "0.18.0" }
 protobuf = { id = "com.google.protobuf", version = "0.9.4" }
@@ -54,7 +54,7 @@ scalaLibrary = { module = "org.scala-lang:scala-library", version = "2.13.12" }
 gson = { module = "com.google.code.gson:gson", version = "2.10.1" }
 jacksonDatabind = { module = "com.fasterxml.jackson.core:jackson-databind", version = "2.15.3" }
 jaxbApi = { module = "javax.xml.bind:jaxb-api", version = "2.3.1" }
-jaxbImpl = { module = "org.glassfish.jaxb:jaxb-runtime", version = "4.0.3" }
+jaxbImpl = { module = "org.glassfish.jaxb:jaxb-runtime", version = "4.0.4" }
 jaxb3Api = { module = "jakarta.xml.bind:jakarta.xml.bind-api", version = "3.0.1" }
 jaxb3Impl = { module = "com.sun.xml.bind:jaxb-impl", version = "3.0.2" }
 moshi = { module = "com.squareup.moshi:moshi", version = "1.15.0" }
@@ -62,7 +62,7 @@ protobuf = { module = "com.google.protobuf:protobuf-java", version.ref = "protob
 protoc = { module = "com.google.protobuf:protoc", version.ref = "protobuf" }
 simpleXml = { module = "org.simpleframework:simple-xml", version = "2.7.1" }
 wireRuntime = { module = "com.squareup.wire:wire-runtime", version = "2.2.0" }
-jsoup = { module = "org.jsoup:jsoup", version = "1.16.1" }
+jsoup = { module = "org.jsoup:jsoup", version = "1.16.2" }
 robovm = { module = "com.mobidevelop.robovm:robovm-rt", version.ref = "robovm" }
 errorproneCore = { module = "com.google.errorprone:error_prone_core", version = "2.10.0" }
 errorproneJavac = { module = "com.google.errorprone:javac", version = "9+181-r4173-1" }
