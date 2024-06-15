@@ -15,6 +15,7 @@
  */
 package retrofit2.mock;
 
+import java.security.SecureRandom;
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 
 import java.io.IOException;
@@ -49,7 +50,7 @@ public final class NetworkBehavior {
 
   /** Create an instance with default behavior. */
   public static NetworkBehavior create() {
-    return new NetworkBehavior(new Random());
+    return new NetworkBehavior(new SecureRandom());
   }
 
   /**
