@@ -15,6 +15,7 @@
  */
 package retrofit2.converter.jaxb;
 
+import static io.github.pixee.security.XMLInputFactorySecurity.hardenFactory;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Unmarshaller;
@@ -26,7 +27,7 @@ import okhttp3.ResponseBody;
 import retrofit2.Converter;
 
 final class JaxbResponseConverter<T> implements Converter<ResponseBody, T> {
-  final XMLInputFactory xmlInputFactory = XMLInputFactory.newInstance();
+  final XMLInputFactory xmlInputFactory = hardenFactory(XMLInputFactory.newInstance());
   final JAXBContext context;
   final Class<T> type;
 
